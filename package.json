@@ -1,6 +1,6 @@
 {
   "name": "at-line",
-  "version": "1.0.0-0",
+  "version": "1.0.0",
   "description": "get calling function, filename, line-number from error stack trace",
   "keywords": [
     "at",
