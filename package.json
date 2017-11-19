@@ -1,0 +1,67 @@
+{
+  "name": "at-line",
+  "version": "1.0.0-0",
+  "description": "get calling function, filename, line-number from error stack trace",
+  "keywords": [
+    "at",
+    "calling",
+    "error",
+    "function",
+    "line",
+    "stack",
+    "trace"
+  ],
+  "license": "Unlicense",
+  "author": "commenthol <commenthol@gmail.com>",
+  "main": "lib",
+  "module": "src",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint --quiet --cache '**/*.js'",
+    "build": "babel -d lib src",
+    "test": "mocha"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "mocha": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.11.0",
+    "mocha": "^4.0.1"
+  },
+  "eslintIgnore": [
+    "lib"
+  ]
+}
